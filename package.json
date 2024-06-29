@@ -1,7 +1,7 @@
 {
   "name": "@garvae/eslint-config-garvae",
   "version": "1.0.0",
-  "description": "Massive optimized ESLint config for the main front-end environments",
+  "description": "Massive and optimized ESLint config for the main front-end environments",
   "author": "Garvae",
   "scripts": {
     "find-deadcode": "npx unimported --no-cache",
