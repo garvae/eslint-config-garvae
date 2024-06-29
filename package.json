@@ -68,7 +68,7 @@
   "resolutions": {
     "strip-ansi": "6.0.1"
   },
-  "devDependencies": {
+  "dependencies": {
     "@babel/core": "7.24.7",
     "@babel/eslint-parser": "7.24.7",
     "@babel/preset-env": "7.24.7",
@@ -130,5 +130,5 @@
       "eslint --fix"
     ]
   },
-  "dependencies": {}
+  "devDependencies": {}
 }

@@ -64,7 +64,7 @@ yarn add -D @garvae/eslint-config-garvae
 
 ```json
 {
-  "plugins": ["@garvae/eslint-config"]
+  "extends": [ "@garvae/eslint-config-garvae" ]
 }
 ```
 
