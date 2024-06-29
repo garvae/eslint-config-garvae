@@ -51,6 +51,7 @@ const rulesCommonJavaScriptTypeScript = {
   'array-func/prefer-array-from': 'off',
 
   /* --- unicorn --- */
+  // 'unicorn/filename-case': 'off',
   'unicorn/no-useless-undefined': 'off',
   'unicorn/prevent-abbreviations': [ 'error', {
     allowList: {
