@@ -1,0 +1,128 @@
+{
+  "name": "@garvae/eslint-config-garvae",
+  "version": "0.1.0",
+  "description": "Massive optimized ESLint config for the main front-end development environments",
+  "author": "Garvae",
+  "scripts": {
+    "find-deadcode": "npx unimported --no-cache",
+    "install:husky": "[ ! -d \"/node_modules/is-ci/\" ] || is-ci || [ ! -d \"/node_modules/husky/\" ] || husky install",
+    "lint": "eslint ./.eslintrc.js ./rules/**/*",
+    "lint-fix": "eslint ./.eslintrc.js ./rules/**/* --fix",
+    "postinstall": "yarn install:husky",
+    "prepare": "yarn install:husky",
+    "publish": "npm publish",
+    "version:patch": "npm version patch && node scripts/plugin-version-update.js"
+  },
+  "keywords": [
+    "config",
+    "eslint",
+    "eslint-config",
+    "html",
+    "jest",
+    "jsdoc",
+    "markdown",
+    "next",
+    "react",
+    "redux",
+    "security",
+    "typescript"
+  ],
+  "license": "SEE LICENSE IN THE 'LICENCE' FILE",
+  "files": [
+    "rules"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garvae/eslint-config-garvae.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": {
+    "url": "https://github.com/garvae/eslint-config-garvae/issues"
+  },
+  "homepage": "https://github.com/garvae/eslint-config-garvae#readme",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js"
+  },
+  "peerDependencies": {
+    "eslint": ">=8.0.0 <=8.22.0",
+    "jest": "*",
+    "prettier": ">=3.0.0",
+    "typescript": "^5.0.0"
+  },
+  "peerDependenciesMeta": {
+    "jest": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "node": "^16.10.0 || ^18.12.0 || >=20.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.7",
+    "@babel/eslint-parser": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "@babel/preset-react": "^7.24.7",
+    "@babel/preset-typescript": "^7.24.7",
+    "@getify/eslint-plugin-proper-arrows": "^11.0.3",
+    "@getify/eslint-plugin-proper-ternary": "^3.1.1",
+    "@html-eslint/eslint-plugin": "^0.25.0",
+    "@html-eslint/parser": "^0.25.0",
+    "@stylistic/eslint-plugin-js": "^2.3.0",
+    "@types/eslint-plugin-security": "^3.0.0",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20",
+    "@typescript-eslint/eslint-plugin": "5.0.0",
+    "@typescript-eslint/parser": "5.0.0",
+    "babel-preset-next": "^1.4.0",
+    "eslint": "8.1.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "18.0.0",
+    "eslint-config-next": "15.0.0-rc.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-array-func": "4.0.0",
+    "eslint-plugin-better-styled-components": "^1.1.2",
+    "eslint-plugin-destructuring": "^2.2.1",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-html": "^8.1.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jest": "27.2.1",
+    "eslint-plugin-jsdoc": "^48.5.0",
+    "eslint-plugin-jsonc": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.9.0",
+    "eslint-plugin-markdownlint": "^0.6.0",
+    "eslint-plugin-modules-newline": "^0.0.6",
+    "eslint-plugin-newline-destructuring": "^1.2.2",
+    "eslint-plugin-no-unsanitized": "^4.0.2",
+    "eslint-plugin-perfectionist": "2.3.0",
+    "eslint-plugin-pii": "^1.0.2",
+    "eslint-plugin-prefer-type-alias": "^0.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-react": "^7.34.3",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-redux": "^4.1.0",
+    "eslint-plugin-security": "^3.0.1",
+    "eslint-plugin-sort-destructure-keys": "^2.0.0",
+    "eslint-plugin-sort-keys-fix": "^1.1.2",
+    "eslint-plugin-styled-components-a11y": "^2.1.34",
+    "eslint-plugin-typescript-sort-keys": "^3.2.0",
+    "eslint-plugin-unicorn": "41.0.0",
+    "eslint-plugin-unused-imports": "3.2.0",
+    "eslint-plugin-write-good-comments": "^0.2.0",
+    "eslint-plugin-you-dont-need-lodash-underscore": "^6.14.0",
+    "jsonc-eslint-parser": "^2.4.0",
+    "prettier": "^3.3.2",
+    "typescript": "^5.5.2"
+  },
+  "lint-staged": {
+    "*.{js,tsm,json,md}": [
+      "eslint --fix"
+    ]
+  },
+  "dependencies": {
+    "remove": "^0.1.5"
+  }
+}
