@@ -16,7 +16,6 @@ const pluginsCommonJavaScriptTypeScript = [
   'import',
   'jsdoc',
   'jsx-a11y',
-  'modules-newline',
   'newline-destructuring',
   'no-unsanitized',
   'perfectionist',
@@ -30,6 +29,7 @@ const pluginsCommonJavaScriptTypeScript = [
   'styled-components-a11y',
   'unused-imports',
   'write-good-comments',
+  'import-newlines',
 ];
 
 const extendsCommonJavaScriptTypeScript = [

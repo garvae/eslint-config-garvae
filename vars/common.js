@@ -1,3 +1,8 @@
 const LINE_LENGTH = 120;
 
-module.exports = { LINE_LENGTH }
+const IS_PRODUCTION = process.env.NODE_ENV === 'production'
+
+module.exports = {
+  IS_PRODUCTION,
+  LINE_LENGTH, 
+}

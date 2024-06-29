@@ -6,7 +6,10 @@
 
 /* eslint-disable sort-keys-fix/sort-keys-fix -- don't need it here */
 
-const { LINE_LENGTH } = require('../vars/common');
+const {
+  IS_PRODUCTION,
+  LINE_LENGTH,
+} = require('../vars/common');
 
 const rulesCommonJavaScriptTypeScript = {
 
@@ -142,7 +145,7 @@ const rulesCommonJavaScriptTypeScript = {
 
   /* --- imports --- */
   'unused-imports/no-unused-imports': 'error',
-  'unused-imports/no-unused-vars': [ 'warn', {
+  'unused-imports/no-unused-vars': [ 'error', {
     vars: 'all',
     varsIgnorePattern: '^_',
     args: 'after-used',
@@ -153,6 +156,7 @@ const rulesCommonJavaScriptTypeScript = {
   'import/no-anonymous-default-export': 'off',
   'import/namespace': 'error',
   'import/no-named-as-default': 'off',
+  'import/no-default-export': 'error',
   'import/export': 'error',
   'import/order': [ 'error', {
     alphabetize: {
@@ -193,8 +197,9 @@ const rulesCommonJavaScriptTypeScript = {
     'newlines-between': 'always',
   } ],
   // 'no-restricted-imports': [ 'error', { patterns: aliases.map(alias => `../${alias}/*`) } ],
-  'modules-newline/import-declaration-newline': 'warn',
-  'modules-newline/export-declaration-newline': 'warn',
+  // 'modules-newline/import-declaration-newline': 'warn',
+  // 'modules-newline/export-declaration-newline': 'warn',
+  'import-newlines/enforce': [ 'error', 2 ],
   'no-restricted-imports': [ 'error', { patterns: [ '@mui/*/*/*' ] } ],
 
   /* --- perfectionist --- */
