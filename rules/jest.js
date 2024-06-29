@@ -4,6 +4,8 @@
  *  =========================================================
  */
 
+const JEST_PACKAGE_JSON_PATH = 'jest/package.json'
+
 const extendsJest = [  ];
 
 const pluginsJest = [ 'jest' ];
@@ -35,14 +37,17 @@ const rulesJest = {
 
 const getJestVersion = () => {
   try {
-    const jest = require('jest/package.json');
+    // eslint-disable-next-line global-require, import/no-unresolved, import/no-dynamic-require -- this is recommended solution
+    const jest = require(JEST_PACKAGE_JSON_PATH);
 
     if (jest) {
       return jest.version;
     }
   } catch {
-
+    return undefined;
   }
+
+  return undefined;
 };
 
 const overridesJest = {

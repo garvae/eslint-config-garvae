@@ -51,12 +51,13 @@ const rulesCommonJavaScriptTypeScript = {
   'array-func/prefer-array-from': 'off',
 
   /* --- unicorn --- */
+  'unicorn/no-useless-undefined': 'off',
   'unicorn/prevent-abbreviations': [ 'error', {
     allowList: {
       props: true,
       getInitialProps: true,
     },
-    checkFilenames: false, 
+    checkFilenames: false,
   } ],
 
   /* --- better-styled-components --- */

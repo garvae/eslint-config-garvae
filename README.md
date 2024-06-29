@@ -2,7 +2,7 @@
 
 <br/>
 
-Massive optimized [ESLint][eslint] config for the main front-end development environments
+Massive optimized [ESLint][eslint] config for the main front-end environments
 
 <br/>
 

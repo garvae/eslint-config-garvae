@@ -1,4 +1,10 @@
 {
   "entry": ["index.js"],
-  "ignorePatterns": ["**/node_modules/**", "scripts/**", "src-local/**"]
+  "ignorePatterns": [
+    "**/node_modules/**",
+    "babel.config.js",
+    "scripts/**",
+    "src-local/**",
+    "vars/ignore.js"
+  ]
 }

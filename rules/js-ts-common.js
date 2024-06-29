@@ -68,7 +68,7 @@ const configCommonJavaScriptTypeScript = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  settings: { react: { version: 'detect' } },
+  settings: { react: { version: '18' } },
 };
 
 module.exports = {
