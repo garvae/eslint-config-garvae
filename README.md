@@ -201,6 +201,7 @@ Tested package versions:
     "eslint-plugin-eslint-comments": "3.2.0",
     "eslint-plugin-html": "8.1.1",
     "eslint-plugin-import": "2.29.1",
+    "eslint-plugin-import-newlines": "^1.4.0",
     "eslint-plugin-jest": "27.2.1",
     "eslint-plugin-jsdoc": "48.5.0",
     "eslint-plugin-jsonc": "2.16.0",
