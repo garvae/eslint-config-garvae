@@ -1,5 +1,17 @@
 name: CI
 on:
+  workflow_dispatch:
+    branches: [ master ]
+    inputs:
+      agreement:
+        description: "Run manually?"
+        type: choice
+        options:
+          - "yes"
+          - "no"
+        default: "no"
+        required: true
+
   release:
     types: [published]
 
