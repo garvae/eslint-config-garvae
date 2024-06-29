@@ -70,7 +70,25 @@ yarn add eslint@8.22.0 -D
 
 <br/>
 
-### 2. Install package
+### 2. Install `prettier` if you haven't already
+
+<br/>
+
+npm:
+
+```sh
+npm i prettier --save-dev
+```
+
+yarn:
+
+```sh
+yarn add prettier -D
+```
+
+<br/>
+
+### 3. Install package
 
 <br/>
 
@@ -88,7 +106,7 @@ yarn add -D @garvae/eslint-config-garvae eslint-plugin-typescript-sort-keys@3.2.
 
 <br/>
 
-### 3. Add the [eslint-config-garvae](https://www.npmjs.com/package/@garvae/eslint-config-garvae) to the `ESLint config`
+### 4. Add the [eslint-config-garvae](https://www.npmjs.com/package/@garvae/eslint-config-garvae) to the `ESLint config`
 
 <br/>
 
