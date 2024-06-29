@@ -29,7 +29,12 @@
   ],
   "license": "SEE LICENSE IN THE 'LICENCE' FILE",
   "files": [
-    "rules"
+    ".eslintrc.lib.js",
+    "babel.config.js",
+    "rules",
+    "tsconfig.eslint.json",
+    "tsconfig.json",
+    "vars"
   ],
   "repository": {
     "type": "git",
