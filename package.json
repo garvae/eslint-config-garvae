@@ -1,6 +1,6 @@
 {
   "name": "@garvae/eslint-config-garvae",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Massive and optimized ESLint config for the main front-end environments",
   "author": "Garvae",
   "scripts": {
