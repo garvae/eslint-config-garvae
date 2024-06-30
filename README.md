@@ -41,6 +41,7 @@ This package provides settings and best practices for:
 🌟 Jest <br/>
 🌟 JSON <br/>
 🌟 Markdown <br/>
+🌟 [Feature Sliced Design][FSD] (disabled by default) <br/>
 
 <br/>
 
@@ -172,6 +173,25 @@ It's also required to add the path to your `tsconfig.json` into next sections:
           }
         }
       }
+    }
+  ]
+}
+```
+
+<br/>
+
+### 5. [Feature Sliced Design][FSD]
+
+<br/>
+
+You can add [config](https://www.npmjs.com/package/@feature-sliced/eslint-config) of [Feature Sliced Design][FSD]:
+
+```json
+{
+  "overrides": [
+    {
+      "files": [ "*.ts", "*.tsx", "*.js", "*.jsx" ],
+      "extends": [ "@feature-sliced" ]
     }
   ]
 }
@@ -347,6 +367,7 @@ Feel free to check [issues page][issue] and [pull request page][pr].
 [pr]: https://github.com/garvae/eslint-config-garvae/pulls
 [repo]: https://github.com/garvae/eslint-config-garvae
 [license]: https://github.com/garvae/eslint-config-garvae/blob/master/LICENSE?raw=true
+[FSD]: https://github.com/feature-sliced/documentation
 [//]: # "---------------------------- contacts ----------------------------"
 [garvae]: https://sprd.li/4wr38watys
 [//]: # "------------------------------------------------------------------"

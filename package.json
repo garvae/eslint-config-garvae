@@ -124,7 +124,9 @@
     "jsonc-eslint-parser": "2.4.0"
   },
   "devDependencies": {
+    "@feature-sliced/eslint-config": "^0.1.1",
     "eslint": "8.22.0",
+    "eslint-plugin-boundaries": "^4.2.1",
     "prettier": "3.3.2",
     "typescript": "5.5.2"
   },
