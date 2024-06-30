@@ -76,6 +76,7 @@
     "@babel/preset-env": "7.24.7",
     "@babel/preset-react": "7.24.7",
     "@babel/preset-typescript": "7.24.7",
+    "@feature-sliced/eslint-config": "^0.1.1",
     "@getify/eslint-plugin-proper-arrows": "11.0.3",
     "@getify/eslint-plugin-proper-ternary": "3.1.1",
     "@html-eslint/eslint-plugin": "0.25.0",
@@ -93,6 +94,7 @@
     "eslint-import-resolver-typescript": "3.6.1",
     "eslint-plugin-array-func": "4.0.0",
     "eslint-plugin-better-styled-components": "1.1.2",
+    "eslint-plugin-boundaries": "^4.2.1",
     "eslint-plugin-destructuring": "^2.2.1",
     "eslint-plugin-eslint-comments": "3.2.0",
     "eslint-plugin-html": "8.1.1",
@@ -124,9 +126,7 @@
     "jsonc-eslint-parser": "2.4.0"
   },
   "devDependencies": {
-    "@feature-sliced/eslint-config": "^0.1.1",
     "eslint": "8.22.0",
-    "eslint-plugin-boundaries": "^4.2.1",
     "prettier": "3.3.2",
     "typescript": "5.5.2"
   },
