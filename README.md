@@ -124,7 +124,10 @@ If you don't have a babel config, then add the path to the on included in this l
 {
   "overrides": [
     {
-      "files": [ "*.js", "*.jsx" ],
+      "files": [
+        "*.js",
+        "*.jsx"
+      ],
       "parserOptions": {
         "babelOptions": {
           "configFile": "./node_modules/@garvae/eslint-config-garvae/babel.config.js"

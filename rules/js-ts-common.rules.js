@@ -6,10 +6,7 @@
 
 /* eslint-disable sort-keys-fix/sort-keys-fix -- don't need it here */
 
-const {
-  IS_PRODUCTION,
-  LINE_LENGTH,
-} = require('../vars/common');
+const { LINE_LENGTH } = require('../vars/common');
 
 const rulesCommonJavaScriptTypeScript = {
 
@@ -54,15 +51,22 @@ const rulesCommonJavaScriptTypeScript = {
   'array-func/prefer-array-from': 'off',
 
   /* --- unicorn --- */
-  // 'unicorn/filename-case': 'off',
+  'unicorn/filename-case': 'off',
+  'unicorn/no-array-for-each': 'off',
+  'unicorn/no-array-reduce': 'off',
+  'unicorn/no-null': 'off',
+  'unicorn/no-object-as-default-parameter': 'off',
   'unicorn/no-useless-undefined': 'off',
-  'unicorn/prevent-abbreviations': [ 'error', {
-    allowList: {
-      props: true,
-      getInitialProps: true,
-    },
-    checkFilenames: false,
-  } ],
+  'unicorn/prefer-add-event-listener': 'off',
+  'unicorn/prefer-number-properties': 'off',
+  'unicorn/prefer-prototype-methods': 'off',
+  'unicorn/prevent-abbreviations': 'off',
+  'unicorn/relative-url-style': 'off',
+  'unicorn/require-array-join-separator': 'off',
+  'unicorn/require-number-to-fixed-digits-argument': 'off',
+
+  /* --- better-styled-components --- */
+  'pii/no-phone-number': 'off',
 
   /* --- better-styled-components --- */
   'better-styled-components/sort-declarations-alphabetically': 2,
